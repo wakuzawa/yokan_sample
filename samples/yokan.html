@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yokan</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- slick.jsアイテム-->
+<!-- ios-srcとsrcのパスは要変更-->
+    <model-viewer
+    class="model-viewer"
+    ios-src="model/yokan.glb"
+    src="model/yokan.glb"
+    preload="preload"
+    camera-controls="camera-controls"
+    shadow-intensity="1"
+    ar="ar"
+    ar-modes="webxr scene-viewer quick-look fallback"
+    ar-scale="fixed"
+    alt="sample"
+    >
+    <button class="model-viewer-btn" slot="ar-button">
+    クリックしてARを表示
+    </button>
+    </model-viewer>
+
+    
+
+    <!-- bodyタグ内の任意の位置に配置-->
+    <script
+        type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+</body>
+</html>
